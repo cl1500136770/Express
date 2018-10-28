@@ -1,0 +1,175 @@
+/* 基础样式 */
+
+view, scroll-view, swiper, swiper-item, icon, text, progress, button,
+checkbox-group, checkbox, form, input, label, picker, radio-group, radio, slider,
+switch, action-sheet, action-sheet-item, action-sheet-cancel, modal, toast,
+loading, navigator, audio, image, video, map, canvas {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+page {
+  height: 100%;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+checkbox-group, radio-group {
+  display: block;
+}
+
+:before, :after, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.c-minheight {
+  min-height: 80px;
+}
+
+.c-full {
+  width: 100%;
+  height: 100%;
+}
+
+.c-block {
+  display: block;
+}
+
+.c-autosize {
+  width: auto;
+  height: auto;
+}
+
+.c-fullwidth {
+  width: 100%;
+}
+
+.c-fullheight {
+  height: 100%;
+}
+
+.c-initHide {
+  opacity: 0 !important;
+}
+
+.c-ellipse {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/*顶部tabbar*/
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 70rpx;
+  min-height: 70rpx;
+  background-color: rgba(0, 0, 0, 1);
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+}
+
+/*tabbar内部选项卡*/
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 29%;
+  color: #777;
+}
+
+/*选项卡底部横条和文字*/
+
+.on {
+  color: #fff;
+  border-bottom: 5rpx solid #fff;
+}
+
+/*content*/
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* 自定义样式 */
+
+.b-being-view {
+  background-color: rgb(33, 212, 253);
+  background-image: linear-gradient(19deg, rgb(33, 212, 253) 0%, rgb(183, 33, 255) 100%);
+  min-height: 80px;
+  height: 80px;
+  margin: 12px 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 9px;
+  margin-bottom: 0px;
+}
+
+.b-jump-view {
+  height: 10%;
+  min-height: 100%;
+  width: 10%;
+  min-width: 10%;
+  overflow: hidden;
+  background-color: rgba(161, 161, 161, 0.729412);
+  background-repeat: no-repeat;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.b-info-view {
+  height: 100%;
+  min-height: 100%;
+  width: 90%;
+  min-width: 90%;
+  padding: 6px 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 9px;
+}
+
+.b-img-jump {
+  height: 20%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 20%;
+}
+
+.b-txt-state {
+  border-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin-bottom: 9px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.b-txt-company {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+}
+
+.b-txt-number {
+  color: rgb(69, 69, 69);
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 100;
+}

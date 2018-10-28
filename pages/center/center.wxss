@@ -1,0 +1,174 @@
+/* 基础样式 */
+
+view, scroll-view, swiper, swiper-item, icon, text, progress, button,
+checkbox-group, checkbox, form, input, label, picker, radio-group, radio, slider,
+switch, action-sheet, action-sheet-item, action-sheet-cancel, modal, toast,
+loading, navigator, audio, image, video, map, canvas {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+page {
+  height: 100%;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+checkbox-group, radio-group {
+  display: block;
+}
+
+:before, :after, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.c-minheight {
+  min-height: 80px;
+}
+
+.c-full {
+  width: 100%;
+  height: 100%;
+}
+
+.c-block {
+  display: block;
+}
+
+.c-autosize {
+  width: auto;
+  height: auto;
+}
+
+.c-fullwidth {
+  width: 100%;
+}
+
+.c-fullheight {
+  height: 100%;
+}
+
+.c-initHide {
+  opacity: 0 !important;
+}
+
+.c-ellipse {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* 自定义样式 */
+
+.c-all-view {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 19px;
+  overflow: scroll;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.c-info-view {
+  background-color: rgb(255, 60, 172);
+  background-image: linear-gradient(225deg, rgb(255, 60, 172) 0%, rgb(120, 75, 160) 50%, rgb(43, 134, 197) 100%);
+  min-height: 118px;
+  border-radius: 9px;
+  display: flex;
+  margin-bottom: 19px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px;
+}
+
+.c-send-view {
+  min-height: 118px;
+  border-radius: 9px;
+  display: flex;
+  margin-bottom: 19px;
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(19deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+  height: 118px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 19px;
+  padding-top: 19px;
+}
+
+.c-img-headPortrait {
+  width: 60px;
+  height: 60px;
+  min-height: 60px;
+  min-width: 60px;
+  display: block;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+}
+
+.c-infoItem-view {
+  display: block;
+  height: 100%;
+  min-height: 100%;
+  width: 60%;
+  min-width: 60%;
+  align-self: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.c-txt-name {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-family: SimSun;
+  margin-bottom: 9px;
+}
+
+.c-txt-autograph {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: georgia;
+}
+
+.c-txt-cententBottom {
+  color: #636363;
+}
+
+.c-load-view {
+  min-height: 118px;
+  border-radius: 9px;
+  display: flex;
+  margin-bottom: 19px;
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(19deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+  height: 118px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 19px;
+  padding-top: 19px;
+}
+
+.c-txt_send {
+  font-weight: 900;
+  color: #000;
+}
+
+.c-txt_load {
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}

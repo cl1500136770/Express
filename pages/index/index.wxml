@@ -1,0 +1,37 @@
+<!-- pages/index/index.wxml -->
+<!-- <import src="/wxSearch/wxSearch.wxml" />
+
+<view class="c-minheight r-title-view">
+  <input bindinput="indexClcikSearchInput" bindfocus="wxSerchFocus" class="c-block c-fullwidth r-title-input" maxlength="20" name="input1" placeholder=" 请输入快递单号" type="text" />
+  <text class="c-block r-title-search" catchtap="indexClcikSearch">搜索</text>
+</view>
+<template is="wxSearch" data="{{wxSearchData}}" />
+ -->
+
+<view class="c-minheight i-body">
+  <view class="c-minheight i-search-view">
+    <input bindinput="indexClcikSearchInput" bindfocus="wxSerchFocus" class="c-block c-fullwidth i-search-input" name="input1" placeholder="请输入快递单号" type="number" />
+    <image catchtap="indexClcikSearch" class="i-img" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/af3566478d8d15ef4e54949c5b7bc4c3_origin.png" style="background-size: contain; background-position: center center; background-repeat: no-repeat; background-image:         url(http://qty83k.creatby.com/materials/origin/af3566478d8d15ef4e54949c5b7bc4c3_origin.png); "
+    />
+    <image class="i-img" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/3878668db43b9293c6cda8650e881821_origin.png" style="background-size:  contain; background-position:  center center; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/origin/3878668db43b9293c6cda8650e881821_origin.png); "
+    />
+  </view>
+
+  <template is="wxSearch" data="{{wxSearchData}}" />
+
+  <view class="c-minheight i-center-view">
+    <text class="c-block i-center-txt-company">{{expressCompany}}</text>
+    <view class="c-minheight i-center-view-centent">
+
+      <!--循环显示-->
+
+      <block wx:for="{{expressDataList}}" wx:for-item="item" wx:key = "index" >
+        <view class="c-minheight i-center-view-item">
+          <text class="c-block i-center-txt-timer">{{item.time}}</text>
+          <text class="c-block i-center-txt-address">{{item.status}}</text>
+        </view>
+      </block>
+
+    </view>
+  </view>
+</view>

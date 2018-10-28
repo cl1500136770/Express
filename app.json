@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/center/center",
+    "pages/being/being"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "圈点快递",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#7F8389",
+    "selectedColor": "#ffffff",
+    "list": [
+      {
+        "text": "快递详情",
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/toolbar/runOne.png",
+        "selectedIconPath": "/images/toolbar/runTwo.png"
+      },
+      {
+        "text": "已有快递",
+        "pagePath": "pages/being/being",
+        "iconPath": "/images/toolbar/baoguoOne.png",
+        "selectedIconPath": "/images/toolbar/baoguoTwo.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/center/center",
+        "iconPath": "/images/toolbar/centerOne.png",
+        "selectedIconPath": "/images/toolbar/centerTwo.png"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "position": "bottom",
+    "borderStyle": "black"
+  }
+}

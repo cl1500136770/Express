@@ -1,0 +1,18 @@
+<view class="c-minheight c-all-view">
+  <view class="c-minheight c-info-view">
+    <view class="c-minheight c-infoItem-view">
+      <text class="c-block c-txt-name">{{wxName}}</text>
+      <text class="c-block c-txt-autograph">This signature is a machine translation</text>
+    </view>
+    <image class="c-img-headPortrait" mode="scaleToFill" src="{{wxHeadImg}}" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; "
+    />
+  </view>
+  <view class="c-minheight c-send-view">
+    <text class="c-block c-txt_send">在线寄件</text>
+    <text class="c-block c-txt-cententBottom">Online Express Delivery</text>
+  </view>
+  <view class="c-minheight c-load-view">
+    <text class="c-block c-txt_load">等待添加</text>
+    <text class="c-block c-txt-cententBottom">Waiting for the add</text>
+  </view>
+</view>

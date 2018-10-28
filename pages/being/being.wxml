@@ -1,0 +1,67 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">运输中</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">派件中</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">已送达</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px" bindchange="bindChange">
+
+  <!-- item1 -->
+  <view style='margin-top: 77rpx;'></view>
+  <swiper-item>
+
+    <block wx:for="{{expressDataList}}" wx:for-item="item">
+      <view class="c-minheight b-being-view">
+        <view class="c-minheight b-info-view">
+          <text class="c-block b-txt-state">{{expressStatus1}}</text>
+          <text class="c-block b-txt-company">{{expressCompany1}}</text>
+          <text class="c-block b-txt-number">{{expressNumber1}}</text>
+        </view>
+        <view class="c-minheight b-jump-view">
+          <image class="b-img-jump" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/a29a12fdbfb54b2a2bfc828dc43eaf61_origin.png" style="background-size: contain; background-position: center center; background-repeat: no-repeat; background-image:          url(http://qty83k.creatby.com/materials/origin/a29a12fdbfb54b2a2bfc828dc43eaf61_origin.png); "
+          />
+        </view>
+      </view>
+    </block>
+
+  </swiper-item>
+
+  <!-- item2 -->
+  <swiper-item>
+
+    <block wx:for="{{expressDataList}}" wx:for-item="item">
+      <view class="c-minheight b-being-view">
+        <view class="c-minheight b-info-view">
+          <text class="c-block b-txt-state">{{expressStatus2}}</text>
+          <text class="c-block b-txt-company">{{expressCompany2}}</text>
+          <text class="c-block b-txt-number">{{expressNumber2}}</text>
+        </view>
+        <view class="c-minheight b-jump-view">
+          <image class="b-img-jump" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/a29a12fdbfb54b2a2bfc828dc43eaf61_origin.png" style="background-size: contain; background-position: center center; background-repeat: no-repeat; background-image:          url(http://qty83k.creatby.com/materials/origin/a29a12fdbfb54b2a2bfc828dc43eaf61_origin.png); "
+          />
+        </view>
+      </view>
+    </block>
+
+  </swiper-item>
+
+  <!-- item3 -->
+  <swiper-item>
+
+    <block wx:for="{{expressDataList}}" wx:for-item="item">
+      <view class="c-minheight b-being-view">
+        <view class="c-minheight b-info-view">
+          <text class="c-block b-txt-state">{{expressStatus3}}</text>
+          <text class="c-block b-txt-company">{{expressCompany3}}</text>
+          <text class="c-block b-txt-number">{{expressNumber3}}</text>
+        </view>
+        <view class="c-minheight b-jump-view">
+          <image class="b-img-jump" mode="aspectFit" src="http://qty83k.creatby.com/materials/origin/a29a12fdbfb54b2a2bfc828dc43eaf61_origin.png" style="background-size: contain; background-position: center center; background-repeat: no-repeat; background-image:          url(http://qty83k.creatby.com/materials/origin/a29a12fdbfb54b2a2bfc828dc43eaf61_origin.png); "
+          />
+        </view>
+      </view>
+    </block>
+
+  </swiper-item>
+
+</swiper>
